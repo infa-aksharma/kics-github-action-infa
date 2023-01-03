@@ -1,7 +1,7 @@
 const moment = require('moment')
 const { summary } = require('@actions/core/lib/summary');
 
-const kicsLogo = "https://user-images.githubusercontent.com/111127232/203838108-ad537fea-4573-495a-9619-18500ee81dd9.png"
+const kicsLogo = "https://logos-download.com/wp-content/uploads/2020/07/Informatica_Logo.png"
 const severityOrder = ["HIGH", "MEDIUM", "LOW", "INFO", "TRACE"];
 const severityIcons = {
     "HIGH": "https://user-images.githubusercontent.com/23239410/92157087-97285600-ee32-11ea-988f-0aca12c4c126.png",
@@ -14,7 +14,7 @@ const emptyIcon = "https://user-images.githubusercontent.com/75368139/137874724-
 
 function createComment(results, withQueries = false, excludedColumnsForCommentsWithQueries) {
     let message = "![kics-logo](" + kicsLogo + ")\n";
-    message += `\n**KICS version: ${results['kics_version']}**\n`
+    message += `\n**CSOC version 1.0**\n`
 
     message += "<table>\n";
     message += "<tr></tr>\n";
