@@ -14,7 +14,7 @@ const emptyIcon = "https://user-images.githubusercontent.com/75368139/137874724-
 
 function createComment(results, withQueries = false, excludedColumnsForCommentsWithQueries) {
     let message = "![kics-logo](" + kicsLogo + ")\n";
-    message += `\n**CSOC version 1.0**\n`
+    message += `\n**IaC scan results**\n Details in checks tab. `
 
     message += "<table>\n";
     message += "<tr></tr>\n";
